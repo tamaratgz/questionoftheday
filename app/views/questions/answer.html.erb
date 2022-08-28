@@ -1,0 +1,18 @@
+<h1>Y la respuesta es...</h1>
+<div>
+	<p>
+    <% if @youranswer.blank? %>
+      😶
+    <% else %>
+      <p>Has dicho "<%= @youranswer %>"</p>
+    <% end %>
+	</p>
+</div>
+<div class="coach">
+	<p><strong><%= @tamaraanswer %></strong></p>
+	<p><cite>Tamara Torrecillas</cite><br>
+	<cite>+34 644 144 517</cite><br>
+	<cite>hola@tamaratorrecillas.com</cite></p>
+</div>
+
+<%= link_to "Responde otra vez", root_path %>
