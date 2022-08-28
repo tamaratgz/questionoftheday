@@ -1,28 +1,40 @@
-<div class="container">
+<html>
 
-  <p>Hoy es <%= Date.today.strftime("%m/%d/%Y") %></p>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La pregunta del día</title>
+    <meta name="description" content="Entra y descubre cuál es la pregunta de hoy.">
+    <meta charset="utf-8">
+  </head>
 
-  <h1>La pregunta del día</h1>
+  <body>
 
-	<h2>¿Os gustaría tenerme en vuestro equipo? 👩🏻‍💻</h2>
-
-	<form action="/answer">
-    <div class="input-group">
-      <input type="text" name="youranswer" class="form-control">
-      <input type="submit" value="Enviar respuesta">
+    <div style="text-align:center">
+      <p class="date">Hoy es <%= Date.today.strftime("%m/%d/%Y") %></p>
+      <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFd4beDQ80h9Q/profile-displayphoto-shrink_400_400/0/1657826512393?e=1667433600&v=beta&t=0jpLlP8BzJEtaxCnpCSdVWOr9ptrhmLd95Qkpq1NWwI" style="width:150px; height:150px; border-radius:50%; margin-bottom:3%"  alt="Tamara Torrecillas">
+      <br>
+      <h1><strong>La pregunta del día</strong></h1>
+      <br>
+      <h3>👩🏻‍💻 ¿Os gustaría tenerme en vuestro equipo?</h3>
+      <br>
+      <form class="form" action="/answer">
+        <div class="input-group">
+          <input type="text" name="youranswer" class="form-control">
+          <input type="submit" value="Enviar respuesta" class="btn btn-primary">
+        </div>
+      </form>
+      <p style="font-size: 12.5px; margin-top: 8px"><em>¡PST! Pista: escribe "Sí", "No", déjalo en blanco o responde con otra pregunta.</em></p>
     </div>
-	</form>
+    <br>
+      <div class="description">
+        <p>👋 ¡Hola!</p>
+        <p>🙋🏻‍♀️ Soy <strong>Tamara</strong>.</p>
+        <p>🖤 Empecé traduciendo y hablar idiomas me ha abierto las puertas a un maravilloso mundo de <strong>start-ups tecnológicas de diferentes partes del mundo.</strong></p>
+        <p>🧠 Empecé a coquetear con la traducción <strong>creativa</strong>, el copywriting y las redes sociales y terminé especializándome en campañas de <strong>marketing digital</strong> y colaboraciones con influencers.</p>
+        <p>📱 Mi vena <strong>techie</strong> me llevó a lanzar una <strong>app móvil</strong> para gestionar invitados de bodas y recientemente <strong>decidí aprender a programar</strong> para poder entender el lado más técnico y fundamental y así llevar las riendas de mi proyecto.</p>
+        <p>💡 <strong>¡Y me he enamorado</strong> del sinfín de posibilidades que he descubierto al aprender a crear aplicaciones web!</p>
+        <p>👩🏻‍💻 Así que aquí estoy hoy, intentando hacerme un hueco en este mundo que me ha despertado <strong>unas ganas inmensas de aprender y crecer.</strong></p>
+      </div>
 
-  <p>¡Hola!</p>
-
-  <p>Soy Tamara. Dicen que tengo muchos pajaritos en la cabeza, pero yo lo llamo ideas con ganas de ver la luz y volar.</p>
-
-  <p>Empecé traduciendo, y hablar idiomas me ha abierto las puertas a un maravilloso mundo de start-ups tecnológicas.</p>
-  <p>Empecé a coquetear con la traducción creativa, el copywriting y las redes sociales y terminé especializándome en campañas de marketing digital y colaboraciones con influencers.</p>
-  <p>Mi vena techie me llevó a lanzar una app para gestionar invitados de bodas y recientemente decidí aprender a programar para poder entender el lado más técnico y fundamental y así llevar las riendas de mi proyecto.</p>
-  <p>¡Y me he enamorado del sinfín de posibilidades que he descubierto al aprender a crear aplicaciones web!</p>
-  <p>Así que aquí estoy hoy, intentando hacerme un hueco en este mundo que me ha despertado unas ganas inmensas de aprender y crecer.</p>
-
-
-
-</div>
+  </body>
+</html>

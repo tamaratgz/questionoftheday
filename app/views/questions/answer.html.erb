@@ -1,18 +1,26 @@
-<h1>Y la respuesta es...</h1>
-<div>
-	<p>
-    <% if @youranswer.blank? %>
-      😶
-    <% else %>
-      <p>Has dicho "<%= @youranswer %>"</p>
-    <% end %>
-	</p>
-</div>
-<div class="coach">
-	<p><strong><%= @tamaraanswer %></strong></p>
-	<p><cite>Tamara Torrecillas</cite><br>
-	<cite>+34 644 144 517</cite><br>
-	<cite>hola@tamaratorrecillas.com</cite></p>
-</div>
+<div class="answer-container">
+  <h1>Y la respuesta es...</h1>
 
-<%= link_to "Responde otra vez", root_path %>
+  <div>
+    <p>
+      <% if @youranswer.blank? %>
+      <% else %>
+        <p>Has dicho "<%= @youranswer %>"</p>
+      <% end %>
+    </p>
+  </div>
+
+  <br>
+
+  <div class="coach">
+    <p><strong><%= @myanswer %></strong></p>
+    <br>
+    <p><cite>Tamara Torrecillas</cite><br>
+    <cite>+34 644 144 517</cite><br>
+    <cite>hola@tamaratorrecillas.com</cite></p>
+  </div>
+
+  <div class="again">
+    <%= link_to "Responde otra vez", root_path, :style=>'text-decoration: none; color: black; font-weight: bold;' %>
+  </div>
+</div>
