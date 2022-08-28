@@ -6,9 +6,9 @@ class QuestionsController < ApplicationController
     @youranswer = params[:youranswer]
     if @youranswer.blank?
       @tamaraanswer = "No has respondido... ¡Prueba otra vez!"
-    elsif @youranswer =~ /Sí/i
+    elsif @youranswer == "Sí"
       @tamaraanswer = "¡Qué ilusión! Tienes mis datos de contacto abajo. Espero tus noticias. ☺️"
-    elsif @youranswer =~ /No/i
+    elsif @youranswer == "No"
       @tamaraanswer = "Oh, me da mucha pena, ¡pero seguiré aprendiendo y lo seguiré intentando!"
     elsif @youranswer.ends_with?("?")
       @tamaraanswer = "Esto de responder a una pregunta con otra es muy gallego, ¿no?"
